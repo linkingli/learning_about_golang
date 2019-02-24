@@ -1,4 +1,4 @@
-# learning_about_golangin
+# learning_about_golang
 
 ###package learning
 ```
