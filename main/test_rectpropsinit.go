@@ -1,11 +1,10 @@
-package rectangle
+package main
 
 import (
-	"../../rectangle_package"
+	"../rectangle_package"
 	"fmt"
 	"log"
 )
-
 
 /*如果一个包导入了另一个包，会先初始化被导入的包。
 
@@ -19,13 +18,12 @@ import (
 最后调用 main 函数。*/
 /*
 * 1. 包级别变量
-*/
+ */
 var rectLen, rectWidth float64 = 0, 7
-
 
 /*
 *2. init 函数会检查长和宽是否大于0
-*/
+ */
 func init() {
 	println("main package initialized")
 	if rectLen < 0 {
@@ -40,4 +38,3 @@ func main() {
 	fmt.Printf("area of rectangle_package %.2f\n", rectangle_package.Area1(rectLen, rectWidth))
 	fmt.Printf("diagonal of the rectangle_package %.2f ", rectangle_package.Diagonal1(rectLen, rectWidth))
 }
-
