@@ -26,3 +26,28 @@ func Test2() {
 }
 
 //注意这里的else要在}之后否则会报错，原因是Go 语言的分号是自动插入。
+
+func Tesss() {
+	for i := 1; i <= 10; i++ {
+		if i > 5 {
+			break //loop is terminated if i > 5
+		}
+		fmt.Printf("%d ", i)
+	}
+	fmt.Printf("\nline after for loop")
+}
+
+func Tessss() {
+	for i := 1; i <= 10; i++ {
+		if i%2 == 0 {
+			continue
+		}
+		fmt.Printf("%d ", i)
+	}
+}
+
+func Testssss() {
+	for {
+		fmt.Println("Hello World")
+	}
+}
